@@ -2,8 +2,16 @@ public class StackUser {
 
     public static void main(String[] args) {
         Stack stack = new Stack(3);
+        stack.push(3);
+        stack.push(6);
+        stack.push(2);
 
-        System.out.println("stack must be empty but is empty:" + stack.isEmpty());
+        System.out.println("==========================");
+        System.out.println(stack);
+        System.out.println("==========================");
+        //2 -> 6 -> 3 Stack size is 3
+
+       /* System.out.println("stack must be empty but is empty:" + stack.isEmpty());
         System.out.println("stack size must be 0 and  is: " + stack.size());
 
         stack.push(10);
@@ -39,6 +47,6 @@ public class StackUser {
             System.out.println("We must not get that line in the logs");
         } catch (IllegalStateException e) {
             System.out.println("Exception text must be 'underflow' and text is = " + e.getMessage());
-        }
+        }*/
     }
 }
